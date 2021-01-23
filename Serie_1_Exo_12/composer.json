@@ -2,10 +2,10 @@
   "autoload": {
     "psr-4": {
       "Controllers\\": "app\\Controllers",
-      "Entity\\": "app\\Entity",
       "Models\\": "app\\Models",
       "Util\\": "util",
-      "Configuration\\": "config\\Configuration"
+      "Configuration\\": "config\\Configuration",
+      "Entity\\": "app\\Entity"
     }
   },
   "require": {

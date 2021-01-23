@@ -5,26 +5,29 @@ use Entity\Personne;
 
 class ContactModel
 {
-    private $contacts;
-    public static $nbreContacts = 0;
+    /*private $contacts;
+    public static $nbreContacts = 0;*/
 
-    /**
-     * ContactModel constructor.
-     */
+    /*
+
     public function __construct()
     {
         $this->contacts = array();
-    }
+    }*/
 
-    public function addContact(Personne $personne)
+    /*public function addContact(Personne $personne)
     {
         $this->contacts[self::$nbreContacts] = $personne;
         self::$nbreContacts++;
-    }
+    }*/
 
 
     public function getContacts(){
 
-        return $this->contacts;
+        $p1 = new Personne("DIALLO", "Amirou", "damirou95gmail.com", '0659989563', "XXXX");
+        $p2 = new Personne("DIALLO", "Amirou", "damirou95gmail.com", '0659989563', "XXXX");
+        $p3 = new Personne("DIALLO", "Amirou", "damirou95gmail.com", '0659989563', "XXXX");
+
+        return $this->contacts = array($p1, $p2, $p3);
     }
 }
